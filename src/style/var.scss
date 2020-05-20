@@ -1,0 +1,19 @@
+@import "./theme/var.scss";
+
+$--app-theme-color: $--color-primary;
+$--color-white: $--color-white;
+
+// Layout
+$--app-layout-background-color: $--background-color-base;
+$--app-header-background-color: #ccc;
+$--app-aside-background-color: #338ace;
+$--app-aside-active-color: rgba(14, 185, 221, .5);
+$--app-header-height: 56px;
+$--app-tag-view-height: 30px;
+$--app-aside-width: 200px;
+
+// 暴露给js模块的变量
+:export {
+  themeColor: $--app-theme-color;
+  appAsideWidth: $--app-aside-width;
+}

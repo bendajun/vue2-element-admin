@@ -1,0 +1,11 @@
+@import "~element-ui/packages/theme-chalk/src/common/var.scss";
+$--color-primary: #0BC8C1;
+$--color-white: #FFFFFF;
+$--background-color-base: #F6F7FF;
+
+$--button-primary-border-color: #0BC8C1;
+
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+// 先不引入这个css，编译时太卡太慢，原因不知道，使用上面的引入var.scss变量
+// @import "~element-ui/packages/theme-chalk/src/index"; // 这里是官方的，我们要先在上面定义scss变量，然后覆盖官网的，如果这个
+// 引入写在前面的话，那么项目中的主题颜色就不会被替换了。
