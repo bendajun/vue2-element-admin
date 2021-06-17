@@ -6,7 +6,7 @@ import { getLocalToken, removeLocalToken } from '@/utils/auth';
 export default function request(conf) {
   const instance = axios.create({
     timeout: 30000,
-    baseURL: 'http://rap2.taobao.org:38080/app/mock/253844', // 如果是mock地址的话直接写，不是mock的话就是process.env.VUE_APP_BASE_API，根据接口前缀反向代理
+    baseURL: 'http://rap2api.taobao.org/app/mock/253844', // 如果是mock地址的话直接写，不是mock的话就是process.env.VUE_APP_BASE_API，根据接口前缀反向代理
   });
   // 2.设置请求拦截器
   instance.interceptors.request.use((config) => {
